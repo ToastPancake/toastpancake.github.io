@@ -9,6 +9,14 @@
   min-height: 100vh;
   background: linear-gradient(#e7baff, #c2b6d9);
   display: flex;
-  align-content: center;
+  Align-items: center;
   justify-content: center;
+}
+#drop-area{
+  width: 500px;
+  height: 300px;
+  padding: 30px;
+  background: #fff;
+  text-align: center;
+  Border-radius: 20px
 }
