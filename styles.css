@@ -14,7 +14,7 @@ body {
 .hero{
   width: 100%;
   min-height: 100vh;
-  background: powderblue;
+  background: red;
   display: flex;
   align-content: center;
   justify-content: center;
