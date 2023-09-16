@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+/*   background-color: powderblue; */
+/*   display: flex;
+  align-content: center;
+  justify-content: center; */
+}
+.hero{
+  width: 100%;
+  min-height: 100vh;
+  background: powderblue;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.box{
+  padding: 40px;
+  width: 300px;
+  height: 200px;
+  background: white;
+  justify-content: center;
+}
+
+h1 {
+/*   color: blue; */
+}
+p {
+  color: red;
+}
