@@ -1,37 +1,22 @@
-{
-  margin: 0;
-  padding: 0;
-  font-family: "American Typewriter", serif;
-  box-sizing: border-box;
-}
-.hero{
-  width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(#36454f, #808080);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#drop-area{
-  width: 500px;
-  height: 300px;
-  padding: 30px;
-  background: #fff;
-  text-align: center;
-  border-radius: 20px;
-}
-
-#img-view{
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  border: 2px dashed #36454f;
-  background: #e5e4e2;
-  background-position: center;
-  background-size: cover;
-}
-
-#img-view img{
-  width: 250px;
-  margin-top: 25px;
-}
+_<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Rubbish: Image Analyzer</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+    <link rel="stylesheet" href="test_style.css">
+  </head>
+  <body>
+    <div class="hero" style="position:relative; z-index:-2;">
+      <img src="AstronautCord.svg" style="opacity:0.5; position:absolute; top:0; left:0; z-index:-1;">
+      <label for="input-file" id="drop-area">
+        <input type="file" accept="image/*" id="input-file" hidden>
+        <div id="img-view">
+          <img src="RubbishLogoSmall.svg">
+          <p>Drag and drop or click here to upload image.</p>
+        </div>
+      </label>
+    </div>
+    <script src="test_script.js"></script>
+  </body>
+</html>
