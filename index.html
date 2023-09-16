@@ -23,62 +23,6 @@
         <p style="color:white; font-size:20; position: absolute; top: 80%; left:47%;">Test</p>
       </div>
     </div>
-    <py-config>
-      packages = ["tensorflow", "tensorflow_hub", "tempfile", "PIL"]
-    </py-config>    
-    
-    <py-script>
-      import tensorflow as tf
-      import tensorflow_hub as hub
-      from test_script.js import imgLink
-      # For downloading the image.
-      import tempfile
-      from six.moves.urllib.request import urlopen
-      from six import BytesIO
-      
-      # For drawing onto the image.
-      import numpy as np
-      from PIL import Image
-      from PIL import ImageColor
-      from PIL import ImageDraw
-      from PIL import ImageFont
-      from PIL import ImageOps
-      
-      def download_and_resize_image(url, new_width=256, new_height=256,
-                                    display=False):
-        _, filename = tempfile.mkstemp(suffix=".jpg")
-        response = urlopen(url)
-        image_data = response.read()
-        image_data = BytesIO(image_data)
-        pil_image = Image.open(image_data)
-        pil_image = ImageOps.fit(pil_image, (new_width, new_height), Image.LANCZOS)
-        pil_image_rgb = pil_image.convert("RGB")
-        pil_image_rgb.save(filename, format="JPEG", quality=90)
-        return filename
-      
-      module_handle = "https://tfhub.dev/google/openimages_v4/ssd/mobilenet_v2/1" #@param ["https://tfhub.dev/google/openimages_v4/ssd/mobilenet_v2/1", "https://tfhub.dev/google/faster_rcnn/openimages_v4/inception_resnet_v2/1"]
-      
-      detector = hub.load(module_handle).signatures['default']
-      
-      def load_img(path):
-        img = tf.io.read_file(path)
-        img = tf.image.decode_jpeg(img, channels=3)
-        return img
-      
-      def run_detector(detector, path):
-        img = load_img(path)
-        converted_img = tf.image.convert_image_dtype(img, tf.float32)[tf.newaxis, ...]
-        result = detector(converted_img)
-        result = {key:value.numpy() for key,value in result.items()}
-        word = str(result["detection_class_entities"][0])[1:]
-        print(word)
-      
-      def detect_img(image_url):
-        image_path = download_and_resize_image(image_url, 640, 480)
-        run_detector(detector, image_path)
-      
-      detect_img(imgLink)
-  </py-script>
     <script src="test_script.js"></script>
   </body>
 </html>
