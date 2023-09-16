@@ -1,7 +1,5 @@
-.upload{
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-content: center;
-  justify-content: center;
+.box{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
 }
