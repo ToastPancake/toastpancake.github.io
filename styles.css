@@ -1,3 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.upload{
+  width = 100%;
+  min-height: 100vh;
+  background-color: powderblue;
+  
+}
+
 .box{
   width: 100px;
   height: 100px;
