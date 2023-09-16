@@ -3,13 +3,6 @@
   padding: 0;
 }
 
-.upload{
-  width = 100%;
-  min-height: 100vh;
-  background-color: powderblue;
-  
-}
-
 .box{
   width: 100px;
   height: 100px;
@@ -17,7 +10,12 @@
 }
 
 body {
+  width = 100%;
+  min-height: 100vh;
   background-color: powderblue;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 h1 {
   color: blue;
