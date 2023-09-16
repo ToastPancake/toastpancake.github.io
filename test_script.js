@@ -17,4 +17,5 @@ dropArea.addEventListener("dragover", function(e){
 dropArea.addEventListener("drop", function(e){
   e.preventDefault();
   inputFile.files = e.dataTransfer.files;
+  uploadImage();
 });
