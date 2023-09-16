@@ -9,7 +9,7 @@
   min-height: 100vh;
   background: linear-gradient(#e7baff, #c2b6d9);
   display: flex;
-  Align-items: center;
+  align-items: center;
   justify-content: center;
 }
 #drop-area{
@@ -18,7 +18,7 @@
   padding: 30px;
   background: #fff;
   text-align: center;
-  Border-radius: 20px;
+  border-radius: 20px;
 }
 
 #img-view{
