@@ -28,3 +28,16 @@
   border: 2px dashed #bbb5ff;
   background: #f7f8ff;
 }
+
+#img-view img{
+  width: 100px;
+  margin-top: 25px;
+}
+#img-view span{
+  display: block;
+  font-sze: 12px;
+  color: #777;
+  margin-top: 15px
+}
+
+
