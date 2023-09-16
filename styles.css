@@ -23,6 +23,8 @@ body {
 #drop-area{
   width: 500px;
   height: 300px;
+  background: white;
+  text-align: center;
 }
 
 h1 {
