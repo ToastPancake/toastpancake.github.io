@@ -9,9 +9,6 @@ _<!DOCTYPE html>
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
   </head>
   <body>
-    <py-script output = "out">
-      print("Hello World")
-    </py-script>
     <div class="hero">
       <label for="input-file" id="drop-area">
         <input type="file" accept="image/*" id="input-file" hidden>
@@ -26,6 +23,9 @@ _<!DOCTYPE html>
         <p style="color:white; font-size:20; position: absolute; top: 80%; left:47%;">Test</p>
       </div>
     </div>
+    <py-script output = "out">
+      print("Hello World")
+    </py-script>
     <div id="out"></div>
     <script src="test_script.js"></script>
   </body>
