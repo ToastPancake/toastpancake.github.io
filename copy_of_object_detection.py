@@ -2,7 +2,6 @@
 # For running inference on the TF-Hub module.
 import tensorflow as tf
 import tensorflow_hub as hub
-
 # For downloading the image.
 import tempfile
 
@@ -10,9 +9,15 @@ import tempfile
 from PIL import Image
 from PIL import ImageOps
 
+from flask import Flask, render_template, request, jsonify
+import base64
+
+
+
 
 def download_and_resize_image(url, new_width=256, new_height=256,
                               display=False):
+  # imgdata = base64.b64decode(url)
   _, filename = tempfile.mkstemp(suffix=".jpg")
   pil_image = Image.open(url)
   pil_image = ImageOps.fit(pil_image, (new_width, new_height), Image.LANCZOS)
@@ -47,7 +52,7 @@ def run_detector(detector, path):
 
   result = {key:value.numpy() for key,value in result.items()}
   word = str(result["detection_class_entities"][0])[1:]
-  print(word)
+  return word
   
 #  print(re.search(r'\d+', mass).group())
 
@@ -58,6 +63,27 @@ Perform inference on some additional images with time tracking.
 
 def detect_img(image_url):
   image_path = download_and_resize_image(image_url, 640, 480)
-  run_detector(detector, image_path)
+  return run_detector(detector, image_path)
 
-detect_img("./templates/chair.jpg")
+detect_img("./templates/plant.jpg")
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+  return render_template('./index.html')
+
+@app.route('/scan', methods=['GET','POST'])
+def scan():
+  url = request.args.get('value')
+  word = detect_img("./templates/plant.jpg")
+  result = {"output" : word}
+  result = {str(key): value for key, value in result.items()}
+  return word
+  
+
+
+if __name__ == '__main__':
+  app.run()
+  
+#  detect_img(downloaded_image_path)

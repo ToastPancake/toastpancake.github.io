@@ -1,0 +1,28 @@
+_<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Rubbish: Image Analyzer</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+    <link rel="stylesheet" href="test_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="hero">
+      <label for="input-file" id="drop-area">
+        <input type="file" accept="image/*" id="input-file" hidden>
+        <div id="img-view">
+          <img src="RubbishLogoSmall.svg">
+          <p>Drag and drop or click here to upload image.</p>
+        </div>
+      </label>
+      <img src="AstronautCord.svg" object-fit=fill style="opacity:0.2; position:absolute; top:0; left:0; z-index:-1;">
+      <div class="scanButton">
+        <button type="button" style="position: absolute; top: 75%; left:47%; background-color: #E5E4E2;">Scan Image</button>
+        <p style="color:white; font-size:20; position: absolute; top: 80%; left:47%;">Test</p>
+      </div>
+    </div>
+    <div id = "out"></div>
+    <script src="test_script.js"></script>
+  </body>
+</html>
