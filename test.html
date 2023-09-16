@@ -7,7 +7,8 @@ _<!DOCTYPE html>
     <link rel="stylesheet" href="test_style.css">
   </head>
   <body>
-    <div class="hero">
+    <div class="hero" style="position:relative; z-index:-2;">
+      <img src="AstronautCord.svg" style="opacity:0.5; position:absolute; top:0; left:0; z-index:-1;">
       <label for="input-file" id="drop-area">
         <input type="file" accept="image/*" id="input-file" hidden>
         <div id="img-view">
@@ -18,9 +19,4 @@ _<!DOCTYPE html>
     </div>
     <script src="test_script.js"></script>
   </body>
-  <style>
-    body {
-      background-image: url('AstronautCord.svg');
-    }
-  </style>
 </html>
