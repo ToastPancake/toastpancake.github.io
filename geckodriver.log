@@ -1,0 +1,31 @@
+1694853221266	geckodriver	INFO	Listening on 127.0.0.1:2613
+1694853224313	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "2614" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\georg\\AppData\\Local\\Temp\\rust_mozprofiletldVIL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694853224689	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694853224765	Marionette	INFO	Listening on port 2626
+WebDriver BiDi listening on ws://127.0.0.1:2614
+Read port: 2626
+1694853224995	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:2614/devtools/browser/936b97ea-49f6-4a3f-abc9-4cbc24c30821
+JavaScript warning: https://chat.openai.com/_next/static/chunks/pages/_app-8b0f1c5906bf0853.js, line 11: Script terminated by timeout at:
+en@https://chat.openai.com/_next/static/chunks/pages/_app-8b0f1c5906bf0853.js:11:612890
+82534/sl/eh<@https://chat.openai.com/_next/static/chunks/pages/_app-8b0f1c5906bf0853.js:11:650576
+eF@https://chat.openai.com/_next/static/chunks/pages/_app-8b0f1c5906bf0853.js:11:581938
+82534/eB/<@https://chat.openai.com/_next/static/chunks/pages/_app-8b0f1c5906bf0853.js:11:581884
+
+JavaScript warning: https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/orchestrate/chl_api/v1?ray=8077c4641e382424, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 593))
+JavaScript warning: https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/orchestrate/chl_api/v1?ray=8077c487cab42424, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 593))
+JavaScript warning: https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/orchestrate/chl_api/v1?ray=8077c4e21ddb2424, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 593))
+1694853261800	Marionette	INFO	Stopped listening on port 2626
+Dynamically enable window occlusion 1
