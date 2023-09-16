@@ -4,3 +4,11 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
+.hero{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(#e7baff, #c2b6d9);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
