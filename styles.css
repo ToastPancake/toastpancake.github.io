@@ -3,12 +3,6 @@
   padding: 0;
 }
 
-.box{
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
-}
-
 body {
   width = 100%;
   min-height: 100vh;
